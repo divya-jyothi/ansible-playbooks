@@ -1,0 +1,9 @@
+---
+ - hosts: all
+   become: true
+   gather_facts: yes
+   tasks: 
+     - name: creation of files
+       file: 
+            path: name=/home/ncodeit/hello.txt 
+            state: touch
