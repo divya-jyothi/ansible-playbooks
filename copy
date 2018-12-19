@@ -1,0 +1,9 @@
+---
+ - hosts: all
+   become: true
+   gather_facts: yes
+   tasks: 
+     - name: Copy user configuration
+       copy: 
+            src: /home/admin/setup.conf
+            dest: /usr/local/projects/
