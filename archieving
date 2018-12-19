@@ -1,0 +1,9 @@
+---
+- hosts: all
+  become: true
+  tasks:
+  - name: archieving a file
+    archive:
+           path: /home/ansible/divya.txt
+           dest: /home/ansible/divya.zip
+           state: ready
