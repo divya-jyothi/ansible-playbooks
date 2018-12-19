@@ -1,0 +1,9 @@
+---
+ - hosts: all
+   become: true
+   gather_facts: yes
+   tasks: 
+     - name: deply a war file to tomact
+       get_url:
+              url: <war file url>
+              dest: <destination of webapps folder in tomcat>
