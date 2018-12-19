@@ -14,8 +14,8 @@ tasks:
  ec2_group:
   aws_access_key: <access key>
   aws_secret_key: <Secret key>
-  name: "vniranjan"
-  description: "V Niranjan Security Group"
+  name: <"give name">
+  description: " Security Group"
   region: "{{ region }}"
   rules:
     - proto: tcp
@@ -27,7 +27,7 @@ tasks:
   ec2_key:
    aws_access_key: <access key>
    aws_secret_key: <Secret key>
-   name: "vniranjan"
+   name: <"name">
    region: "{{ region }}"
   register: ec2_key
 - name: Save private key (PEM file)
